@@ -1,0 +1,192 @@
+*{
+    color: white
+}
+
+.principal {
+    background-color: rgb(126, 126, 126);
+}
+
+.nav-item {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.carrusel {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(86, 87, 85);
+}
+
+.imagen-carrusel {
+    height: 600px;
+}
+
+.paquetes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img {
+    height: 280px;
+}
+
+.promocion {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(86, 87, 85);
+}
+
+.imagen-promo {
+    height: 400px;
+}
+
+.seccion-margin {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.texto-promocion {
+    color: white;
+    font-size: 20px;
+}
+
+.contacto{
+    text-align: center;
+    padding-bottom: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+
+.footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 50px;
+    background-color: rgb(75, 74, 74);
+}
+
+@media screen and (max-width: 1390px){
+
+    .imagen-carrusel {
+        height: 470px;
+    }
+
+    .card-img {
+        height: 230px;
+    }
+
+    .imagen-promo {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    .imagen-carrusel {
+        height: 300px;
+    }
+
+    .todo-incluido{
+        margin-top: 30px;
+        margin-bottom: -25px;
+    }
+
+    .paquetes {
+        padding-left: 60px;
+    }
+
+    .card {
+        max-width: 600px;
+        margin: 25px;
+    }
+
+    .card-img {
+        height: 350px;
+    }
+
+    .promocion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-promo {
+        width: 700px;
+        height: 400px;
+    }
+
+    .texto-promocion {
+        padding-left: 50px;
+        color: white;
+        text-align: justify;
+    }
+}
+
+
+@media screen and (max-width: 775px) {
+    .paquetes, .promocion {
+        padding-left: 20px;
+    }
+
+    .imagen-carrusel {
+        height: 220px;
+    }
+
+    .card-img {
+        height: 240px;
+    }
+
+    .imagen-promo {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .imagen-carrusel {
+        height: 160px;
+    }
+
+    .card-img {
+        height: 160px;
+    }
+
+    .imagen-promo {
+        height: 180px;
+    }
+
+    .texto-promocion {
+        font-size: 15px;
+        padding-left: 50px;
+        color: white;
+        text-align: center;
+    }
+}
