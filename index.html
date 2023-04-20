@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="reset.css">
+
     <!-- CSS  -->
     <link rel="stylesheet" href="style.css">
 
@@ -17,9 +19,9 @@
     <div class="container principal">
 
         <!-- HEADER -->
-        <header class="row container-fluid">
-            <div class="col">
-                <nav class="navbar navbar-expand-md navbar-light">
+        <header class="row ">
+            <div class="col p-0">
+                <nav class="navbar navbar-expand-md">
                     <div class="container-fluid">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -27,12 +29,12 @@
                 
                       <div class="collapse navbar-collapse" id="navbar-toggler">
                         <a class="navbar-brand" href="#">
-                          <img src="img/logo-pasobo-tours.png" alt="Logo de Pasobo Tours" width="150px">
+                          <img src="img/logo-pasobo-tours.png" alt="Logo de Pasobo Tours" width="160px">
                         </a>
                 
                         <ul class="navbar-nav d-flex justify-content-around align-items-center">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#venezuela">Venezuela</a>
+                            <a class="nav-link" aria-current="page" href="#venezuela">Venezuela</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#paquetes">Paquetes</a>
@@ -51,12 +53,13 @@
         </header>
 
         <!-- CARRUSEL -->
-        <div class="seccion-margin">
+
+        <div class=" row carrusel carrusel-venezuela" id="venezuela">
+          <div class="seccion-margin">
             <h1>Recorriendo Venezuela</h1>
         </div>
-        <div class=" row carrusel" id="venezuela">
             <div class="col-12">
-                <div id="carousel-venezuela" class="carousel slide carousel-dark">
+                <div id="carousel-venezuela" class="carousel  slide carousel-dark">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carousel-venezuela" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -94,28 +97,28 @@
             <h2>Paquetes Todo Incluido</h2>
         </div>
         <div class="row paquetes" id="paquetes">
-            <div class="col-xs-12 col-lg-4"><div class="card">
+            <div class="col-xs-12 col-lg-4"><div class="card card2">
                 <img src="img/la-tortuga2.jpg" class="card-img" alt="Isla La Tortuga - Venezuela">
                 <div class="card-body">
-                  <h5 class="card-title">Isla La Tortuga</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">La Tortuga</h5>
+                  <p class="card-text">Acompañanos a conocer unas de las islas más paradisiacas, y con aguas las aguas más vírgenes de Venezuela.</p>
+                  <a href="#" class="btn btn-primary">Mas información</a>
                 </div>
               </div></div>
             <div class="col-xs-12 col-lg-4"><div class="card">
                 <img src="img/morrocoy2.jpg" class="card-img" alt="Cayo en Morrocy - Venezuela">
                 <div class="card-body">
                   <h5 class="card-title">Morrocoy</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">Diversión sin fin en los cayos del Parque Nacional Morrocoy, vamos a disfrutar de sus aguas cristalinas y arenas blancas.</p>
+                  <a href="#" class="btn btn-primary">Mas información</a>
                 </div>
               </div></div>
             <div class="col-xs-12 col-lg-4"><div class="card">
                 <img src="img/mochima.jpg" class="card-img" alt="Isla en Mochima - Venezuela">
                 <div class="card-body">
                   <h5 class="card-title">Mochima</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">Te llevamos a las islas más bellas del oriente del país, rodeadas de aguas turquesas e increíbles paisajes</p>
+                  <a href="#" class="btn btn-primary">Mas información</a>
                 </div>
               </div></div>
         </div>
@@ -124,12 +127,12 @@
 
         <div class="row paquete-actual promocion" id="promocion" >
             <div class="col-12 seccion-margin "> 
-            <h2>Promoción Los Roques</h2>
+            <h2 class="titulo-promo">Promoción los Roques</h2>
             </div>
-            <div class="col-md-12 col-lg-6">
-                <div id="carouselExample" class="carousel slide promocion">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
+            <div class="col-md-12 col-lg-7">
+                <div id="carouselPromo" class="carousel slide ">
+                    <div class="carousel-inner d-block carouselPromo">
+                      <div class="carousel-item active ">
                         <img src="img/roques1.jpg" class="imagen-promo" alt="Foto de playa en Los Roques - Venezuela">
                       </div>
                       <div class="carousel-item">
@@ -142,18 +145,20 @@
                         <img src="img/roques4.jpg" class="imagen-promo" alt="Foto de playa en Los Roques - Venezuela">
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromo" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Anterior</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPromo" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Siguiente</span>
                     </button>
                   </div>
             </div>
-            <div class="col-md-12 col-lg-6 texto-promocion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque in minus, sint corrupti ea quis rem, esse dolorum quia a tempora illo ab. Perferendis nisi repellendus assumenda saepe dolorem dolores!</p>
+            <div class="col-md-12 col-lg-5 texto-promocion">
+                  <p>Si hay algo que no te puedes perder es de disfrutar del archipiélago más famoso de nuestra amada Venezuela. <br><br>
+
+                  Acompañamos a recorrer sus cayos y bajos, en sus aguas trasparentes y arenas blancas podremos disfrutar de una experiencia inolvidable.</p>
             </div>
         </div>
 
@@ -161,7 +166,7 @@
         <div class="seccion-margin"></div>
         <div class="row" id="contacto">
             <div class="col-12 contacto">
-                <h2>Contactanos</h2>
+                <h2 class="titulo-contacto">Contactanos</h2>
             </div>
             <div class="col formulario">
                 <div class="row">
@@ -184,7 +189,7 @@
         <div class="seccion-margin"></div>
         <footer class="row footer seccion-margi">
             <div class="col">
-                <h6>Henry Alonzo | Todo los derechos reservados 2023</h6>
+                <h6 class="derechos-reservados">&copy Todo los derechos reservados 2023 | Henry Alonzo | henryalonzo.dev@gmail.com</h6>
             </div>
         </footer>
 
