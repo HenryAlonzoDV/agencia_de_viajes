@@ -2,6 +2,7 @@
     color: white;
 }
 
+
 .navbar {
     width: auto;
     background: url(img/bg-superior2.jpg);
@@ -168,9 +169,10 @@
 }
 
 @media screen and (max-width: 992px) {
+
     
     .imagen-carrusel {
-        height: 300px;
+        height: 380px;
     }
 
     .todo-incluido{
@@ -184,7 +186,7 @@
     }
 
     .card-img {
-        height: 350px;
+        height: 160px;
     }
 
     .promocion {
@@ -199,14 +201,16 @@
     }
 
     .texto-promocion {
+        font-size: 20px;
+        padding-top: 30px;
         padding-left: 50px;
-        color: white;
-        text-align: justify;
+        text-align: center;
     }
 }
 
 
 @media screen and (max-width: 775px) {
+
     .navbar-brand {
         display: flex;
         justify-content: center;
@@ -226,19 +230,61 @@
         height: 240px;
     }
 
+    .promocion {
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+
     .imagen-promo {
         width: 450px;
         height: 250px;
     }
+
+    .texto-promocion {
+        font-size: 18px;
+        padding-top: 30px;
+        padding-left: 50px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 400px) {
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .principal {
+        margin-top: 50px;
+    }
+
+    .carrusel-venezuela {
+        padding: 10px;
+    }
+    
     .imagen-carrusel {
-        height: 160px;
+        height: 180px;
     }
 
     .card-img {
         height: 160px;
+    }
+
+    .card:active {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+    }
+
+    .paquetes{
+        padding-bottom: 25px;
+    }
+
+    .promocion {
+        padding-left: 40px;
+        padding-bottom: 40px;
     }
 
     .imagen-promo {
@@ -247,8 +293,23 @@
 
     .texto-promocion {
         font-size: 15px;
+        padding-top: 30px;
         padding-left: 50px;
         color: white;
         text-align: center;
+    }
+
+    .contacto {
+        padding-top: 15px;
+    }
+
+    .titulo-contacto {
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+    .formulario {
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 }
