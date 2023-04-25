@@ -165,6 +165,36 @@ p {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+}
+
+.redes ul {
+    padding: 0;
+    height: 80px;
+}
+
+.redes li {
+    display: inline;
+}
+
+.redes .icono-redes {
+    font-size: 35px;
+    padding: 15px;
+    color: rgb(238, 238, 238);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+
+.redes .icono-redes:hover {
+    color: rgba(2, 128, 231, 0.582);
+    text-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
+    font-size: 45px;
+}
+
 
 .footer {
     text-align: center;
@@ -273,9 +303,20 @@ p {
         padding-left: 50px;
         text-align: center;
     }
+
+    .redes .icono-redes {
+        font-size: 30px;
+        padding: 8px;
+    }
+
+    .redes .icono-redes:active {
+        color: rgba(2, 128, 231, 0.582);
+        text-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
+        font-size: 36px;
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 
     header{
         position: fixed;
@@ -336,9 +377,18 @@ p {
     }
     
     .formulario {
-        padding-top: 10px;
-        margin-bottom: 5px;
+        margin-bottom: -40px;
+    }
 
+    .redes .icono-redes {
+        font-size: 22px;
+        padding: 8px;
+    }
+
+    .redes .icono-redes:active {
+        color: rgba(2, 128, 231, 0.582);
+        text-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
+        font-size: 30px;
     }
 
 }
