@@ -154,8 +154,8 @@ p {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 40px;
-    color: black;
-    font-weight: 700;
+    color: white;
+    font-weight: 400;
 }
 
 .formulario {
@@ -167,7 +167,7 @@ p {
 }
 
 .titulo-contacto {
-    font-size: 40px;
+    font-size: 34px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -313,6 +313,11 @@ p {
         padding-top: 30px;
         padding-left: 50px;
         text-align: center;
+    }
+
+    .mapa iframe {
+        width: 80%;
+        height: 220px;
     }
 }
 
