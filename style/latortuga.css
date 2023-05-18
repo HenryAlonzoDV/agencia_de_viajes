@@ -50,7 +50,7 @@ p {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* CUERPO */
+/* PROMOCION */
 
 .container-promociones {
     display: flex;
@@ -109,6 +109,15 @@ p {
     text-align: center;
 }
 
+/* CARRUSEL */
+
+.carousel-caption h5 {
+    display: inline-block;
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 /* FOOTERS  */
