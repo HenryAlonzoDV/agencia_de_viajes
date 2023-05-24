@@ -243,35 +243,35 @@
                 </div>
                 <div class="form-seleccion row m-0">
                   <div class="col-md-4" data-bs-theme="dark">
-                    <label for="inputState" class="form-label">Pasajeros</label>
-                    <select id="inputState" class="form-select " >
-                      <option selected>Elegir...</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
+                    <label for="cantidadPasajeros" class="form-label">Pasajeros</label>
+                    <select id="cantidadPasajeros" class="form-select" onchange="calcular()">
+                      <option selected value="0">Elegir...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
                     </select>
                   </div>
                   <div class="col-md-8" data-bs-theme="dark">
-                    <label for="inputState" class="form-label">Descuento promocional</label>
-                    <select class="form-select" aria-label="Default select example ">
-                      <option selected>Open this select menu</option>
-                      <option value="Jubilado">Jubilado </option>
-                      <option value="Niños">Niños (hasta 4 años)</option>
-                      <option value="Parejas">Parejas (2 personas)</option>
-                      <option value="Grupos">Grupos (mínimo 3 personas)</option>
+                    <label for="descuentoPromocional" class="form-label">Descuento promocional</label>
+                    <select id="descuentoPromocional" class="form-select" aria-label="Default select example" onchange="calcular()">
+                      <option selected value="0">Seleccione una opción</option>
+                      <option value="20">Jubilado </option>
+                      <option value="25">Niños (hasta 4 años)</option>
+                      <option value="10">Parejas (2 personas)</option>
+                      <option value="15">Grupos (mínimo 3 personas)</option>
                     </select>
                   </div>
                   <div class="container-precio row" id="precio">
                     <div class="col-md-7 a-pagar">
                       <h3>Total a Pagar:</h3>
                     </div>
-                    <div class="col-md-5 precio-total" id="precio-total">
-                      <h3>400</h3>
+                    <div class="col-md-5 precio-total" >
+                      <h3 id="precio-total">400</h3>
                     </div>
                   </div>
                   <div class="row botones-reservacion m-0">
@@ -279,9 +279,6 @@
                     <button type="submit" class=" col-md-4 btn btn-light btn-lg">Enviar</button>
                   </div>
                 </div>
-                
-                
-
             </div>
         </div>
 
@@ -298,6 +295,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="./reservacion.js" ></script>
 
     <!-- BOOTSTRAP JS-->
     <script
