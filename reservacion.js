@@ -1,13 +1,10 @@
 
-// CALCULAR PRECIO
-
 const precioUnitario = 150
 const cantidadPasajeros = document.getElementById("cantidadPasajeros");
 const descuento = document.getElementById("descuentoPromocional");
 
 cantidadPasajeros.addEventListener("change", calcular);
 descuento.addEventListener("change", calcular);
-
 
 function calcular() {
     const cp = parseInt (cantidadPasajeros.value);
@@ -19,13 +16,14 @@ function calcular() {
     total = subTotal - promocion;
     console.log(total);
     
-    const cambioPrecio = document.getElementById("precio-total");
-    cambioPrecio.innerHTML = total
+    if (total <= 0){
+       const valorCero = document.getElementById("precio-total");
+       valorCero.innerHTML = ""
+    }
+    else {
+        const cambioPrecio = document.getElementById("precio-total");
+        cambioPrecio.innerHTML = total
+    }      
 }
 
-const totalPagar = calcular();
-console.log(totalPagar)
-
-
-// CAMBIAR PRECIO EN EL DOCUMENTO
 
