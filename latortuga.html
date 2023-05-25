@@ -239,9 +239,70 @@
       </div>
 
       <!-- FORMULARIO -->
+      <div class="container-reservacion row p-0 m-0 mt-5">
+        <div class="titulo-reservacion col-12">
+          <h2>Reservación del viaje</h2>
+          <p>150 $ p/p</p>
+        </div>
+        <div class="container-formulario col">
+          <div class="col formulario">
+            <div class="row">
+                <div class="col-md-6" data-bs-theme="dark">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col-md-6" data-bs-theme="dark">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <div class="col-md-12 form-email" data-bs-theme="dark">
+                  <label for="exampleFormControlInput1" class="form-label">Direccion de Email </label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+                </div>
+                <div class="form-seleccion row m-0">
+                  <div class="col-md-4" data-bs-theme="dark">
+                    <label for="cantidadPasajeros" class="form-label">Pasajeros</label>
+                    <select id="cantidadPasajeros" class="form-select" onchange="calcular()">
+                      <option selected value="0">Elegir...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+                  </div>
+                  <div class="col-md-8" data-bs-theme="dark">
+                    <label for="descuentoPromocional" class="form-label">Descuento promocional</label>
+                    <select id="descuentoPromocional" class="form-select" aria-label="Default select example" onchange="calcular()">
+                      <option selected value="0">Seleccione una opción</option>
+                      <option value="20">Jubilado </option>
+                      <option value="25">Niños (hasta 4 años)</option>
+                      <option value="10">Parejas (2 personas)</option>
+                      <option value="15">Grupos (mínimo 3 personas)</option>
+                    </select>
+                  </div>
+                  <div class="container-precio row" id="precio">
+                    <div class="col-md-7 a-pagar">
+                      <h3>Total a Pagar:</h3>
+                    </div>
+                    <div class="col-md-5 precio-total" >
+                      <h3 id="precio-total"></h3>
+                    </div>
+                  </div>
+                  <div class="row botones-reservacion m-0">
+                    <button type="button" class=" col-md-4 btn btn-light btn-lg">Borrar</button>
+                    <button type="submit" class=" col-md-4 btn btn-light btn-lg">Enviar</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+      </div>
 
       <!-- FOOTERS -->
-      <footer class="row footer seccion-margi">
+      <footer class="row footer seccion-margi ">
         <div class="col">
           <h6 class="derechos-reservados">
             &copy Todo los derechos reservados 2023 | Henry Alonzo |
@@ -250,6 +311,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="./reservacion.js" ></script>
 
     <!-- BOOTSTRAP JS-->
     <script
