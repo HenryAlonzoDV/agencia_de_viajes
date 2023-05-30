@@ -248,14 +248,14 @@
           <div class="col formulario">
             <div class="row">
                 <div class="col-md-6" data-bs-theme="dark">
-                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombreForm">
                 </div>
                 <div class="col-md-6" data-bs-theme="dark">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellidoForm">
                 </div>
                 <div class="col-md-12 form-email" data-bs-theme="dark">
                   <label for="exampleFormControlInput1" class="form-label">Direccion de Email </label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+                  <input type="email" class="form-control" id="emailForm" placeholder="nombre@email.com">
                 </div>
                 <div class="form-seleccion row m-0">
                   <div class="col-md-4" data-bs-theme="dark">
@@ -292,7 +292,7 @@
                   </div>
                   <div class="row botones-reservacion m-0">
                     <button type="button" class=" col-md-4 btn btn-light btn-lg">Borrar</button>
-                    <button type="submit" class=" col-md-4 btn btn-light btn-lg">Enviar</button>
+                    <button type="submit" class=" col-md-4 btn btn-light btn-lg" id="botonSumit" onclick="capturarForm()">Enviar</button>
                   </div>
                 </div>
             </div>
@@ -313,6 +313,7 @@
     </div>
 
     <script src="./reservacion.js" ></script>
+
 
     <!-- BOOTSTRAP JS-->
     <script
