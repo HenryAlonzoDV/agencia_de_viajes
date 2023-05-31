@@ -246,21 +246,21 @@
         </div>
         <div class="container-formulario col">
           <div class="col formulario">
-            <div class="row">
+            <form class="form row" id="form" action="">
                 <div class="col-md-6" data-bs-theme="dark">
-                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombreForm">
+                  <input type="text" required name="name" class="form-control" placeholder="Nombre" aria-label="First name" id="nombreForm">
                 </div>
                 <div class="col-md-6" data-bs-theme="dark">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellidoForm">
+                  <input type="text" name="lastName" required class="form-control" placeholder="Apellido" aria-label="Last name" id="apellidoForm">
                 </div>
                 <div class="col-md-12 form-email" data-bs-theme="dark">
                   <label for="exampleFormControlInput1" class="form-label">Direccion de Email </label>
-                  <input type="email" class="form-control" id="emailForm" placeholder="nombre@email.com">
+                  <input type="email" required name="email" class="form-control" id="emailForm" placeholder="nombre@email.com">
                 </div>
                 <div class="form-seleccion row m-0">
                   <div class="col-md-4" data-bs-theme="dark">
                     <label for="cantidadPasajeros" class="form-label">Pasajeros</label>
-                    <select id="cantidadPasajeros" class="form-select" onchange="calcular()">
+                    <select id="cantidadPasajeros" name="pasajeros" class="form-select" >
                       <option selected value="0">Elegir...</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -270,11 +270,13 @@
                       <option value="6">6</option>
                       <option value="7">7</option>
                       <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
                     </select>
                   </div>
                   <div class="col-md-8" data-bs-theme="dark">
                     <label for="descuentoPromocional" class="form-label">Descuento promocional</label>
-                    <select id="descuentoPromocional" class="form-select" aria-label="Default select example" onchange="calcular()">
+                    <select id="descuentoPromocional" class="form-select" aria-label="Default select example" name="descuento">
                       <option selected value="0">Seleccione una opción</option>
                       <option value="20">Jubilado </option>
                       <option value="25">Niños (hasta 4 años)</option>
@@ -292,10 +294,10 @@
                   </div>
                   <div class="row botones-reservacion m-0">
                     <button type="button" class=" col-md-4 btn btn-light btn-lg">Borrar</button>
-                    <button type="submit" class=" col-md-4 btn btn-light btn-lg" id="botonSumit" onclick="capturarForm()">Enviar</button>
+                    <button type="submit" class=" col-md-4 btn btn-light btn-lg" id="botonSubmit" >Enviar</button>
                   </div>
                 </div>
-            </div>
+            </form>
         </div>
 
 
